@@ -79,7 +79,13 @@
   @media(max-width:720px){.proof{grid-template-columns:repeat(2,1fr)}.proof .cell:nth-child(1),.proof .cell:nth-child(2){border-bottom:1px solid var(--line)}.proof .cell:nth-child(2){border-right:none}}
 
   /* dash divider - road line motif */
-  .dash{height:2px;background-image:repeating-linear-gradient(90deg,var(--gold) 0 22px,transparent 22px 40px);opacity:.8;width:76px;margin-bottom:22px}
+  .dash{width:152px;height:9px;margin-bottom:24px;opacity:.9;
+    background-image:
+      linear-gradient(90deg,var(--gold),var(--gold)),
+      repeating-linear-gradient(90deg,var(--gold) 0 24px,transparent 24px 40px);
+    background-size:100% 3px,100% 3px;
+    background-position:top left,bottom left;
+    background-repeat:no-repeat,no-repeat}
 
   section.block{padding:clamp(44px,5.5vw,80px) clamp(20px,5vw,64px);max-width:1280px;margin:0 auto}
   .sec-head{margin-bottom:32px;max-width:640px}

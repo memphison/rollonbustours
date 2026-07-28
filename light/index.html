@@ -39,16 +39,16 @@
 
   /* nav */
   header{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;
-    padding:20px clamp(20px,5vw,64px);background:linear-gradient(to bottom,rgba(10,15,28,.97) 0%,rgba(10,15,28,.62) 70%,transparent 100%);transition:background .3s}
-  header.solid{background:rgba(10,15,28,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.1)}
+    padding:20px clamp(20px,5vw,64px);background:linear-gradient(to bottom,rgba(251,246,236,.98) 0%,rgba(251,246,236,.85) 70%,rgba(251,246,236,.4) 100%);transition:background .3s}
+  header.solid{background:rgba(251,246,236,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
   .brand{display:flex;align-items:center;gap:11px}
   .brand svg,.brand img{width:80px;height:80px;flex:none;object-fit:contain}
-  .brand .name{font-family:var(--display);font-weight:700;font-size:1.15rem;letter-spacing:.01em;white-space:nowrap;color:#F3F1E9}
-  .brand .sub{font-family:var(--mono);font-size:.6rem;letter-spacing:.18em;color:#8D96B3;text-transform:uppercase;opacity:.75}
+  .brand .name{font-family:var(--display);font-weight:700;font-size:1.15rem;letter-spacing:.01em;white-space:nowrap;color:#1C2333}
+  .brand .sub{font-family:var(--mono);font-size:.6rem;letter-spacing:.18em;color:#5C6480;text-transform:uppercase;opacity:.85}
   nav .links{display:flex;gap:30px;align-items:center}
-  nav .links a{font-size:.86rem;color:#fff;transition:color .2s}
+  nav .links a{font-size:.86rem;color:#1C2333;transition:color .2s}
   nav .links a.btn-gold{color:#000}
-  nav .links a:hover{color:#F3F1E9}
+  nav .links a:hover{color:var(--gold-text)}
   .btn{font-family:var(--body);font-weight:700;font-size:.85rem;padding:12px 22px;border-radius:30px;cursor:pointer;border:none;white-space:nowrap;
     display:inline-flex;align-items:center;gap:8px;transition:transform .15s,box-shadow .2s}
   .btn-gold{background:var(--gold);color:#000}
@@ -217,7 +217,7 @@
   <a class="brand" href="#top">
     <img src="/images/logo.png" alt="Roll On Bus Tours logo">
     <span>
-      <span class="name">Roll On <em style="font-style:italic;color:#4FDCC9">Bus Tours</em></span><br>
+      <span class="name">Roll On <em style="font-style:italic;color:#086353">Bus Tours</em></span><br>
       <span class="sub">Somerset &amp; Lexington, KY</span>
     </span>
   </a>
